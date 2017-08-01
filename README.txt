@@ -1,4 +1,4 @@
-Wellcome to Intel® Single Event API (Intel® SEAPI)!
+Welcome to Intel® Single Event API (Intel® SEAPI)!
 
 Before reading further please visit wiki to see examples of visualization. https://github.com/01org/IntelSEAPI/wiki
 
@@ -34,6 +34,10 @@ Bulding:
         this will produce .so to be put into your application folder manually
         on windows requires Ninja (https://github.com/ninja-build/ninja/releases) to be in PATH
 
+Running pylint over the code:
+    docker build -t pylint:alpine .
+    docker run --rm -v $(pwd):/code pylint:alpine
+    
 Open Source Intel® SEAPI currently supports these formats:
 
 * Windows Performance Analyzer - Windows (ETW): https://msdn.microsoft.com/en-us/library/windows/hardware/hh448170.aspx
